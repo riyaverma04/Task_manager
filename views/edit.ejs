@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="w-[80%] bg-steal-900 text-white p-10">
+        <a href="/" class="text-blue-500 inline-block mt-5">Go to back</a>
+        <form action="/update" method="post">
+            <div class="flex  justify-center items-center">
+                <label class="w-[7rem]" for="previoustitle">previous title: </label>
+                <input type="text" name="previoustitle" class="w-[90%] rounded-md bg-slate-900 p-2 text-white outline-none m-2" value="<%= filename %>" disabled="true">
+            </div>
+            <div class="flex justify-center items-center">
+                <label for="previoustitle" class="w-[7rem]">new title: </label>
+            <input type="text" name="newtitle" class="w-[90%] rounded-md bg-slate-900 p-2 text-white outline-none m-2" placeholder="enter your new title here...">
+
+            </div>
+           
+            
+            
+            <input type="submit" class="bg-teal-500	 text-white rounded-sm px-6 py-2 uppercase block m-2">
+        </form>
+       
+    </div>
+</body>
+</html>
